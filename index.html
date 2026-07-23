@@ -1215,6 +1215,12 @@
       font-weight: 900;
       letter-spacing: .04em;
     }
+    .interview-click-badge {
+      top: 9px;
+      right: 9px;
+      z-index: 4;
+      font-size: 8px;
+    }
     .interview-case-copy {
       padding: 12px;
       border-top: 2px solid var(--line);
@@ -2006,13 +2012,17 @@
       padding-top: 18px;
     }
     .why-intro {
-      max-width: 390px;
+      max-width: none;
       margin: 0;
       font-family: var(--serif);
-      font-size: 16px;
-      line-height: 1.22;
-      letter-spacing: -.045em;
+      font-size: clamp(10.5px, 3.2vw, 13px);
+      line-height: 1.35;
+      letter-spacing: -.04em;
       font-weight: 900;
+    }
+    .why-intro span {
+      display: block;
+      white-space: nowrap;
     }
     .why-module {
       margin-top: 32px;
@@ -2861,6 +2871,7 @@
                   <img src="./assets/interview-04.webp" alt="" loading="lazy">
                   <img src="./assets/interview-10.webp" alt="" loading="lazy">
                   <img src="./assets/interview-15.webp" alt="" loading="lazy">
+                  <span class="click-badge heavy interview-click-badge">重磅原始记录 · 点开翻阅 ↗</span>
                   <span class="interview-stack-cta"><span>翻阅 13 份原始记录</span><span>↗</span></span>
                 </button>
               </div>
@@ -2881,7 +2892,7 @@
         <div class="jp">为什么是我</div>
         <div class="page-kicker">PAGE<br>04</div>
         <div class="why-board">
-          <p class="why-intro">刘思毅，不敢说我一定是最适合你的那一个，<br>只是给你看，我理解你真正缺什么，以及我已经有什么。</p>
+          <p class="why-intro"><span>刘思毅，不敢说我一定是最适合你的那一个，</span><span>只是给你看，我理解你真正缺什么，以及我已经有什么。</span></p>
 
           <section class="why-module" aria-labelledby="auditionHeading">
             <header class="why-module-head">
